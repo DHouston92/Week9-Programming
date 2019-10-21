@@ -1,0 +1,15 @@
+class BankAccount:
+  def __init__(self, version, number, balance, interest):
+    self.version = version
+    self.number = number
+    self.balance = balance
+    self.interest = interest
+  
+  def UserAccount(self):
+    return "{}{}{}{}".format(self.version,self.number,self.balance,self.interest)
+    
+  
+Account_1 = BankAccount("Checking Account ", "864243853 ", "$100 ", "No interest paid.")
+Account_2 = BankAccount("Savings Account ", "723479824 ", "$25 ", "Interest Paid Annually.")
+                        
+print(Account_2.UserAccount())
